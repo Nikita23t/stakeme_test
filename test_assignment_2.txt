@@ -1,0 +1,5 @@
+Не уверен, что правильно выполнил, но я сделал все, что мог. Думаю, это правильное решение. Но, возможно, я ошибся. В любом случае, я сделал все, что мог)))
+
+P.S. Я сразу с подстановкой сделал $1 = 10
+
+SELECT * FROM test_txs WHERE block_height IN ( SELECT DISTINCT block_height FROM test_txs ORDER BY block_height DESC LIMIT 10 ) ORDER BY block_height DESC;  
