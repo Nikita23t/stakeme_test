@@ -47,3 +47,17 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## API
+
+```bash
+# swagger
+link /api/docs
+
+# for evm-haqq
+link { .../evm/block/:height, GET }
+link { .../evm/transactions/:hash, GET }
+
+#for cosmos.it-rocket
+link { .../cosmos/block/:height, GET } 
+link { .../cosmos/transactions/:hash, GET }
+```
